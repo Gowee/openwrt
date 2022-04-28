@@ -495,6 +495,15 @@ define Device/belkin_f9k1115-v2
 endef
 TARGET_DEVICES += belkin_f9k1115-v2
 
+define Device/bhu_ethmain-station
+  SOC := qca9533
+  DEVICE_VENDOR := BHU
+  DEVICE_MODEL := ETHMAIN-STATION
+  DEVICE_PACKAGES := rssileds -uboot-envtools
+  IMAGE_SIZE := 16192k
+endef
+TARGET_DEVICES += bhu_ethmain-station
+
 define Device/buffalo_bhr-4grv
   $(Device/buffalo_common)
   SOC := ar7242
